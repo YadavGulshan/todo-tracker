@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types'
-
+import Button from './button'
 const Header = (argument) => {
     return (
-        <header>
+        <header className="header">
             <h1 style={HeaderStyle}>{argument.title}</h1>
+            <Button text="Add" color="blue" />
         </header>
     )
 }
 
 const HeaderStyle = {
-    color: 'red',
 }
 Header.defaultProps = {
     title: "Todo Tracker"

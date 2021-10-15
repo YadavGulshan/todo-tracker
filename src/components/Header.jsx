@@ -1,10 +1,15 @@
 import PropTypes from 'prop-types'
 import Button from './button'
 const Header = (argument) => {
+    const onClick = () => {
+        console.log("This button is clicked");
+        localStorage.setItem('todo', "task");
+        console.log(localStorage.getItem('todo'))
+    }
     return (
         <header className="header">
             <h1 style={HeaderStyle}>{argument.title}</h1>
-            <Button text="Add" color="blue" />
+            <Button color="blue" text="Add" onClick={onClick} />
         </header>
     )
 }
@@ -20,3 +25,5 @@ Header.propTypes = {
 }
 
 export default Header
+
+

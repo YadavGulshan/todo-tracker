@@ -11,7 +11,7 @@ const Header = (argument) => {
             <h1 style={HeaderStyle}>{argument.title}</h1>
             <Button color="blue" text="Add" onClick={onClick} />
         </header>
-    )
+    );
 }
 
 const HeaderStyle = {
@@ -24,6 +24,6 @@ Header.propTypes = {
     title: PropTypes.string.isRequired
 }
 
-export default Header
+export default Header;
 
 

@@ -13,7 +13,7 @@ body {
     max-width: 500px;
     margin: 30px auto;
     overflow: auto;
-    min-height: 300px;
+    min-height: 20vh;
     border: 1px solid steelblue;
     padding: 30px;
     border-radius: 5px;
@@ -58,10 +58,11 @@ body {
     margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    justify-content: space-around;
 }
 
 .task.reminder {
-    border-left: 5px solid green;
+    border-left: 5px solid rgb(141, 11, 11);
 }
 
 .task h3 {
@@ -108,4 +109,15 @@ body {
 footer {
     margin-top: 30px;
     text-align: center;
+}
+
+.reminder {
+    background-color: rgb(151, 229, 151);
+}
+
+.task-container {
+    background-color: rgba(44, 124, 199, 0.164);
+    min-height: 10vh;
+    border-radius: 5px;
+    padding: 10px;
 }
